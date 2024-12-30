@@ -45,7 +45,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-
 /* Main content styles */
 .main-content {
     display: flex;
@@ -100,10 +99,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-social-icons a img {
+.social-icons a img {
     width: 30px;
     height: 30px;
 }
+
 /* Dropdown menu styles */
 .dropdown {
     position: relative;
@@ -143,4 +143,49 @@ social-icons a img {
 
 .dropdown-content a:hover {
     background-color: #ddd;
+}
+
+/* Media Query for phones */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .text-section {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text-section h2 {
+        font-size: 2rem;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .social-icons {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .social-icons a img {
+        width: 25px;
+        height: 25px;
+    }
 }
